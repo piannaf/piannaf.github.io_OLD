@@ -3,19 +3,70 @@
 body {
   background: #d4d4d4 url("../images/background.png");
   text-align: center;
-  font-family: sans-serif; }
+  font-family: sans-serif;
+}
 
-h1 {
-  color: rgba(0, 0, 0, .3);
+/* Index page header */
+body.index h1 {
+  color: rgba(0, 0, 0, .5);
   font-weight: bold;
-  font-size: 32px;
+  font-size: 5em;
   letter-spacing: -1px;
   text-transform: uppercase;
   text-shadow: 0 1px 0 rgba(255, 255, 255, .5);
-  background: url("../images/middleman.png") no-repeat center 100px;
-  padding: 350px 0 10px;
-  margin: 0; }
+  margin: 0.75em 0 0;
+}
 
+body.index h2 {
+  color: rgba(0, 0, 0, .3);
+  font-weight: bold;
+  font-size: 1.5em;
+  letter-spacing: -1px;
+  text-transform: lowercase;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, .5);
+}
+
+/* Index page article */
+body.index article {
+  border: 1px solid black;
+  padding: 5em 0;
+}
+
+body.index article header h1 {
+  color: rgba(0, 0, 0, .5);
+  font-weight: bold;
+  font-size: 3em;
+  letter-spacing: -1px;
+  text-transform: uppercase;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, .5);
+  margin: 0;
+}
+
+body.index article section {
+  margin-top: 3em;
+  margin-bottom: 2em;
+}
+
+body.index article header h2 {
+  color: rgba(0, 0, 0, .3);
+  font-weight: bold;
+  font-size: 0.75em;
+  letter-spacing: -1px;
+  text-transform: none;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, .5);
+}
+
+body.index article a {
+  display: block;
+  border: 1px solid black;
+  padding: 0.75em;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 15em;
+  margin: auto;
+}
+
+/* other */
 .doc {
   font-size: 14px;
   margin: 0; }

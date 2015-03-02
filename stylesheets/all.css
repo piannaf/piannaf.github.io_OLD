@@ -2,74 +2,66 @@
 
 body {
   background: #d4d4d4 url("../images/background.png");
-  text-align: center;
   font-family: 'Lato', Helvetica, sans-serif;
 }
 
-/* Index page header */
-body.index > header {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+body.index > div {
+  display: table;
+  table-layout: fixed;
   height: 100vh;
-  border: 2px solid white;
+  width: 100vw;
 }
 
-body.index > header h1 {
+body.index > div > header,
+body.index > div > article {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  border: 1px solid black;
+}
+
+body.index h1,
+body.index h2 {
   color: rgba(0, 0, 0, .5);
   font-weight: bold;
   font-size: 5em;
   letter-spacing: -1px;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, .5);
+}
+
+body.index > div > header h1 {
   text-transform: uppercase;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, .5);
-  margin: 0.75em 0 0;
 }
 
-body.index > header h2 {
-  color: rgba(0, 0, 0, .3);
-  font-weight: bold;
+body.index > div > header h2 {
   font-size: 1.5em;
-  letter-spacing: -1px;
   text-transform: lowercase;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, .5);
 }
 
-/* Index page article */
-body.index article {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  border: 1px solid black;
-  height: 100vh;
-}
-
-body.index article header h1 {
-  color: rgba(0, 0, 0, .5);
-  font-weight: bold;
+body.index > div > article header h1 {
   font-size: 3em;
   letter-spacing: -1px;
-  text-transform: uppercase;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, .5);
   margin: 0 auto;
 }
 
-body.index article header h2 {
-  color: rgba(0, 0, 0, .3);
-  font-weight: bold;
+body.index > div > article header h2 {
   font-size: 0.75em;
-  letter-spacing: -1px;
   text-transform: none;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, .5);
 }
 
-body.index article section {
-  margin: 1em auto;
+body.index > div > article section {
+  width: 50%;
+  max-width: 720px;
+  margin: 3em auto 2em;
+  text-align: left;
+  line-height: 1.5em;
 }
 
 body.index article a {
   display: block;
   border: 1px solid black;
-  width: 15em;
+  width: 25%;
+  max-width: 360px;
   padding: 0.75em;
   text-decoration: none;
   text-transform: uppercase;

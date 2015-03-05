@@ -38,6 +38,13 @@ body.index > div > header h2 {
   text-transform: lowercase;
 }
 
+body.index article {
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-position: center;
+}
+
 body.index > div > article header h1 {
   font-size: 3em;
   letter-spacing: -1px;

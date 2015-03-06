@@ -27,20 +27,23 @@
 </content>
   </entry>
   <entry>
-    <title>Example Article</title>
-    <link rel="alternate" href="http://blog.url.com/2012/01/01/example-article.html"/>
-    <id>http://blog.url.com/2012/01/01/example-article.html</id>
-    <published>2012-01-01T09:00:00+09:00</published>
-    <updated>2015-02-24T22:25:35+09:00</updated>
+    <title>PARTICLE Redesign</title>
+    <link rel="alternate" href="http://blog.url.com/2006/08/26/PARTICLE-redesign.html"/>
+    <id>http://blog.url.com/2006/08/26/PARTICLE-redesign.html</id>
+    <published>2006-08-26T09:00:00+09:00</published>
+    <updated>2015-03-06T12:31:34+09:00</updated>
     <author>
       <name>Article Author</name>
     </author>
-    <content type="html">&lt;p&gt;This is an example article. Most article text above the fold will be more than
-80 characters.&lt;/p&gt;
+    <content type="html">&lt;p&gt;Someone discovered I had a way with HTML and recommended me to Professor
+McFarland who wanted his &lt;a href="http://www.pas.rochester.edu/~pavone/particle-www/index.html"&gt;summer program site&lt;/a&gt;
+redesigned. When I found it, it was a frame maze full of broken and recursive
+links. &lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;
 
-&lt;p&gt;You probably want to delete it and write your own articles!&lt;/p&gt;
+&lt;p&gt;I whipped up a design based on the &lt;a href="/images/2006-08-26-original-splash-page.jpg"&gt;original splash image&lt;/a&gt;
+and then spent a long time porting everything over into clean HTML and CSS.&lt;/p&gt;
 </content>
   </entry>
 </feed>

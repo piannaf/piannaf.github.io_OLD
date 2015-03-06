@@ -38,11 +38,19 @@ body.index > div > header h2 {
   text-transform: lowercase;
 }
 
-body.index article {
+body.index > div > article {
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-position: center;
+}
+
+body.index > div > article > div {
+  width: 50%;
+  max-width: 720px;
+  margin: auto;
+  padding: 2em;
+  background-color: rgba(255,255,255,.95);
 }
 
 body.index > div > article header h1 {
@@ -57,14 +65,12 @@ body.index > div > article header h2 {
 }
 
 body.index > div > article section {
-  width: 50%;
-  max-width: 720px;
   margin: 3em auto 2em;
   text-align: left;
   line-height: 1.5em;
 }
 
-body.index article a {
+body.index > div > article > div > a {
   display: block;
   border: 1px solid black;
   width: 25%;

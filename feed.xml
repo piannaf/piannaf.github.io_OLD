@@ -11,8 +11,8 @@
   </author>
   <entry>
     <title>Example Article 2</title>
-    <link rel="alternate" href="http://blog.url.com/2012/01/02/example-article.html"/>
-    <id>http://blog.url.com/2012/01/02/example-article.html</id>
+    <link rel="alternate" href="http://blog.url.com/article/2012/01/02/example-article.html"/>
+    <id>http://blog.url.com/article/2012/01/02/example-article.html</id>
     <published>2012-01-02T09:00:00+09:00</published>
     <updated>2015-03-05T10:26:29+09:00</updated>
     <author>
@@ -28,8 +28,8 @@
   </entry>
   <entry>
     <title>PARTICLE Redesign</title>
-    <link rel="alternate" href="http://blog.url.com/2006/08/26/PARTICLE-redesign.html"/>
-    <id>http://blog.url.com/2006/08/26/PARTICLE-redesign.html</id>
+    <link rel="alternate" href="http://blog.url.com/article/2006/08/26/PARTICLE-redesign.html"/>
+    <id>http://blog.url.com/article/2006/08/26/PARTICLE-redesign.html</id>
     <published>2006-08-26T09:00:00+09:00</published>
     <updated>2015-03-06T12:31:34+09:00</updated>
     <author>

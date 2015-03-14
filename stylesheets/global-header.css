@@ -3,7 +3,6 @@ body.index > div > header {
   vertical-align: middle;
   text-align: center;
 
-  -webkit-transition: all 1.4s ease;
   transition: all 1.4s ease;
 }
 

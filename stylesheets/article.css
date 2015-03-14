@@ -11,8 +11,6 @@ body.article > article > header {
   display: table-cell;
   vertical-align: middle;
   background-size: cover;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
   background-position: center;
   height: 50vh;
   width: 100vw;

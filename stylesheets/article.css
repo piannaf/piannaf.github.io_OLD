@@ -16,14 +16,6 @@ body.article > article > header {
   width: 100vw;
 }
 
-body.article > article > header > div {
-  width: 50%;
-  max-width: 720px;
-  margin: auto;
-  padding: 2em;
-  background-color: rgba(255,255,255,.95);
-}
-
 body.article > article > section {
   display: table-row;
 }

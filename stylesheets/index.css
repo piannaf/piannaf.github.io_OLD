@@ -15,17 +15,7 @@ body.index > div > article {
 
 body.index > div > article {
   background-size: cover;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
   background-position: center;
-}
-
-body.index > div > article > div {
-  width: 50%;
-  max-width: 720px;
-  margin: auto;
-  padding: 2em;
-  background-color: rgba(255,255,255,.95);
 }
 
 body.index > div > article header h1 {

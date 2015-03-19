@@ -5,10 +5,51 @@
   <id>http://blog.url.com/</id>
   <link href="http://blog.url.com/"/>
   <link href="http://blog.url.com/feed.xml" rel="self"/>
-  <updated>2009-10-10T09:00:00+09:00</updated>
+  <updated>2009-11-04T09:00:00+09:00</updated>
   <author>
     <name>Blog Author</name>
   </author>
+  <entry>
+    <title>Logic Simulator Workspace</title>
+    <link rel="alternate" href="http://blog.url.com/article/2009/11/04/logic-simulator-workspace.html"/>
+    <id>http://blog.url.com/article/2009/11/04/logic-simulator-workspace.html</id>
+    <published>2009-11-04T09:00:00+09:00</published>
+    <updated>2015-03-19T21:20:49+09:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;p&gt;The final assigment for CSSE1001 was to go through the process of proposing a
+product idea and implementing it.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;My idea was to port &lt;a href="http://ozark.hendrix.edu/~burch/logisim/index.html"&gt;Logisim&lt;/a&gt;
+to Python along with some improvements.&lt;/p&gt;
+
+&lt;p&gt;I never got to fully implementing my idea but did learn a lot along the way.&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Graphing Calculator</title>
+    <link rel="alternate" href="http://blog.url.com/article/2009/11/03/graphing-calculator.html"/>
+    <id>http://blog.url.com/article/2009/11/03/graphing-calculator.html</id>
+    <published>2009-11-03T09:00:00+09:00</published>
+    <updated>2015-03-19T21:14:49+09:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;p&gt;For my second programming assignment, we were tasked with creating a basic
+graphing calculator. In contrast to 
+&lt;a href="/article/2009/10/10/bike-shop.html"&gt;the first assignment&lt;/a&gt;, there was minimal
+handholding.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;We had to program this mostly based on the visual description. I coded this one
+quickly and, though in hindsight, could have done a better, smarter job, it
+works exactly as specified.&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>Bike Shop</title>
     <link rel="alternate" href="http://blog.url.com/article/2009/10/10/bike-shop.html"/>
@@ -82,26 +123,6 @@ would be limited to 30seconds.&lt;/p&gt;
 &lt;p&gt;Writing &lt;strong&gt;kuiq&lt;/strong&gt; was an opportunity to become more familiar with
 &lt;a href="http://rubyonrails.org/"&gt;Ruby on Rails&lt;/a&gt; and was my first time leveraging
 &lt;a href="http://code.google.com/apis/youtube/overview.html"&gt;a web API&lt;/a&gt;.&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>PARTICLE Redesign</title>
-    <link rel="alternate" href="http://blog.url.com/article/2006/08/26/PARTICLE-redesign.html"/>
-    <id>http://blog.url.com/article/2006/08/26/PARTICLE-redesign.html</id>
-    <published>2006-08-26T09:00:00+09:00</published>
-    <updated>2015-03-06T12:31:34+09:00</updated>
-    <author>
-      <name>Article Author</name>
-    </author>
-    <content type="html">&lt;p&gt;Someone discovered I had a way with HTML and recommended me to Professor
-McFarland who wanted his &lt;a href="http://www.pas.rochester.edu/~pavone/particle-www/index.html"&gt;summer program site&lt;/a&gt;
-redesigned. When I found it, it was a frame maze full of broken and recursive
-links. &lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;I whipped up a design based on the &lt;a href="/images/2006-08-26-original-splash-page.jpg"&gt;original splash image&lt;/a&gt;
-and then spent a long time porting everything over into clean HTML and CSS.&lt;/p&gt;
 </content>
   </entry>
 </feed>

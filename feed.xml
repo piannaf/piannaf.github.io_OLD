@@ -5,10 +5,34 @@
   <id>http://blog.url.com/</id>
   <link href="http://blog.url.com/"/>
   <link href="http://blog.url.com/feed.xml" rel="self"/>
-  <updated>2009-11-06T09:00:00+09:00</updated>
+  <updated>2009-11-10T09:00:00+09:00</updated>
   <author>
     <name>Blog Author</name>
   </author>
+  <entry>
+    <title>Microcontroller Snake Game</title>
+    <link rel="alternate" href="http://blog.url.com/article/2009/11/10/microcontroller-snake-game.html"/>
+    <id>http://blog.url.com/article/2009/11/10/microcontroller-snake-game.html</id>
+    <published>2009-11-10T09:00:00+09:00</published>
+    <updated>2015-03-22T18:54:28+09:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;p&gt;This assignment tested our ability to learn and understand aspects of Computer
+Systems Programming.&lt;/p&gt;
+
+&lt;p&gt;From the documentation:&lt;/p&gt;
+
+&lt;p&gt;"You are required to implement a version of the popular Snake game for the
+&lt;a href="http://www.atmel.com/devices/atmega8515.aspx"&gt;AVR 8515 board&lt;/a&gt;"&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;"The AVR is connected to a 15×7 LED display for displaying game field. The AVR
+is also connected to a PC over the UART and receives input (keypresses) from
+the terminal (HyperTerminal)."&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>Mobile Content Information System</title>
     <link rel="alternate" href="http://blog.url.com/article/2009/11/06/mobile-content-information-system.html"/>
@@ -106,24 +130,6 @@ weekday. This is how I taught myself C.&lt;/p&gt;
 had done it already in C++ using arrays of static size but I wanted to really
 get my hands dirty in C so I got rid of the arrays and added pointers and
 malloc.&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>TekSpeks: a Technical Specifications database</title>
-    <link rel="alternate" href="http://blog.url.com/article/2008/08/20/tekspeks-a-technical-specifications-database.html"/>
-    <id>http://blog.url.com/article/2008/08/20/tekspeks-a-technical-specifications-database.html</id>
-    <published>2008-08-20T09:00:00+09:00</published>
-    <updated>2015-03-14T19:10:44+09:00</updated>
-    <author>
-      <name>Article Author</name>
-    </author>
-    <content type="html">&lt;p&gt;I wanted to create a database driven application for storing detailed technical
-specifications of any product.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;I learned a lot about database design with this project and as a programmer, I
-got extensive experience with unit testing.&lt;/p&gt;
 </content>
   </entry>
 </feed>

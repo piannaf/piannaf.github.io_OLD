@@ -17,17 +17,15 @@
   </head>
   
   <body class="index">
-    <div>
-      <header id="header">
+    <div id="headerBuffer"></div>
+    <div id="header">
+      <header>
         <h1>Justin Mancinelli</h1>
         <h2>Agile developer, coach, and leader</h2>
       </header>
     </div>
 
-      <p>Page 1 of 2</p>
-
-
-  <div>
+      <div class="article">
     <article style="background-image:url(/images/2010-01-13.png)">
       <div>
         <header>
@@ -45,7 +43,7 @@ and uploaded my workbook for your perusal.</p>
       </div>
     </article>
   </div>
-  <div>
+  <div class="article">
     <article style="background-image:url(/images/2009-12-07.png)">
       <div>
         <header>
@@ -62,7 +60,7 @@ into pure C#.</p>
       </div>
     </article>
   </div>
-  <div>
+  <div class="article">
     <article style="background-image:url(/images/2009-11-10.png)">
       <div>
         <header>
@@ -83,7 +81,7 @@ Systems Programming.</p>
       </div>
     </article>
   </div>
-  <div>
+  <div class="article">
     <article style="background-image:url(/images/2009-11-06.png)">
       <div>
         <header>
@@ -100,7 +98,7 @@ Content Information System.</p>
       </div>
     </article>
   </div>
-  <div>
+  <div class="article">
     <article style="background-image:url(/images/2009-11-04.png)">
       <div>
         <header>
@@ -116,7 +114,7 @@ product idea and implementing it.</p>
       </div>
     </article>
   </div>
-  <div>
+  <div class="article">
     <article style="background-image:url(/images/2009-11-03.png)">
       <div>
         <header>
@@ -134,7 +132,7 @@ handholding.</p>
       </div>
     </article>
   </div>
-  <div>
+  <div class="article">
     <article style="background-image:url(/images/2009-10-10.jpg)">
       <div>
         <header>
@@ -150,7 +148,7 @@ would find specific information about products of a Bike Shop</p>
       </div>
     </article>
   </div>
-  <div>
+  <div class="article">
     <article style="background-image:url(/images/2009-03-16.png)">
       <div>
         <header>
@@ -166,7 +164,7 @@ weekday. This is how I taught myself C.</p>
       </div>
     </article>
   </div>
-  <div>
+  <div class="article">
     <article style="background-image:url(/images/2008-08-20.png)">
       <div>
         <header>
@@ -182,7 +180,7 @@ specifications of any product.</p>
       </div>
     </article>
   </div>
-  <div>
+  <div class="article">
     <article style="background-image:url(/images/2008-06-12.png)">
       <div>
         <header>
@@ -206,15 +204,18 @@ would be limited to 30seconds.</p>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script>
       $(window).scroll(function() {
-        var collapsedHeight = 50;
+        var windowHeight = $(this).height();
         var collapsedClass = "collapsed";
         var header = $('#header');
-        var toggleHeight = $(this).height() - collapsedHeight;
+        var headerBuffer = $('#headerBuffer');
+        var toggleHeight = windowHeight * 0.50;
 
         if ($(this).scrollTop() > toggleHeight){
           header.addClass(collapsedClass);
+          headerBuffer.addClass(collapsedClass);
         } else {
           header.removeClass(collapsedClass);
+          headerBuffer.removeClass(collapsedClass);
         }
       });
     </script>

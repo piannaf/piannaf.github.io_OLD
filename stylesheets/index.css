@@ -9,6 +9,23 @@ body.index > div {
   height: 100vh;
 }
 
+/**********/
+/* header */
+/**********/
+
+body.index > div#headerBuffer {
+  background-color: white;
+  transition: all 1.4s ease;
+}
+
+body.index > div#header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: background-color 1.4s ease;
+}
+
 body.index > div > header,
 body.index > div > article {
   display: table-cell;
@@ -18,6 +35,25 @@ body.index > div > article {
   text-align: center;
 }
 
+body.index > div#header h1,
+body.article > div > header h1 {
+  font-size: 5em;
+  text-transform: uppercase;
+}
+
+body.index > div#header h2,
+body.article > div > header h2 {
+  font-size: 1.5em;
+  text-transform: lowercase;
+}
+
+body.index > div#header h3 {
+  display: none;
+}
+
+/***********/
+/* article */
+/***********/
 body.index > div > article {
   background-size: cover;
   background-position: center;

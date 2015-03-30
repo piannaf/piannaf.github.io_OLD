@@ -5,10 +5,29 @@
   <id>http://blog.url.com/</id>
   <link href="http://blog.url.com/"/>
   <link href="http://blog.url.com/feed.xml" rel="self"/>
-  <updated>2010-01-13T09:00:00+09:00</updated>
+  <updated>2010-01-14T09:00:00+09:00</updated>
   <author>
     <name>Blog Author</name>
   </author>
+  <entry>
+    <title>WPF Calculator</title>
+    <link rel="alternate" href="http://blog.url.com/article/2010/01/14/wpf-calculator.html"/>
+    <id>http://blog.url.com/article/2010/01/14/wpf-calculator.html</id>
+    <published>2010-01-14T09:00:00+09:00</published>
+    <updated>2015-03-30T22:02:13+09:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;p&gt;Continuing my quest to understand .NET and C#, I refactored out all the XAML
+from &lt;a href="http://msdn.microsoft.com/en-us/library/ms771362.aspx"&gt;the original sample&lt;/a&gt;
+on MSDN into pure C#.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;It is a direct port so uses WPF and follows the same structure of the original
+program.&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>Computer Systems Workbooks</title>
     <link rel="alternate" href="http://blog.url.com/article/2010/01/13/computer-systems-workbooks.html"/>
@@ -120,27 +139,6 @@ product idea and implementing it.&lt;/p&gt;
 to Python along with some improvements.&lt;/p&gt;
 
 &lt;p&gt;I never got to fully implementing my idea but did learn a lot along the way.&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>Graphing Calculator</title>
-    <link rel="alternate" href="http://blog.url.com/article/2009/11/03/graphing-calculator.html"/>
-    <id>http://blog.url.com/article/2009/11/03/graphing-calculator.html</id>
-    <published>2009-11-03T09:00:00+09:00</published>
-    <updated>2015-03-19T21:14:49+09:00</updated>
-    <author>
-      <name>Article Author</name>
-    </author>
-    <content type="html">&lt;p&gt;For my second programming assignment, we were tasked with creating a basic
-graphing calculator. In contrast to 
-&lt;a href="/article/2009/10/10/bike-shop.html"&gt;the first assignment&lt;/a&gt;, there was minimal
-handholding.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;We had to program this mostly based on the visual description. I coded this one
-quickly and, though in hindsight, could have done a better, smarter job, it
-works exactly as specified.&lt;/p&gt;
 </content>
   </entry>
 </feed>

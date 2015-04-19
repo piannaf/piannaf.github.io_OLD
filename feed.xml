@@ -5,10 +5,35 @@
   <id>http://blog.url.com/</id>
   <link href="http://blog.url.com/"/>
   <link href="http://blog.url.com/feed.xml" rel="self"/>
-  <updated>2010-07-09T09:00:00+09:00</updated>
+  <updated>2010-07-10T09:00:00+09:00</updated>
   <author>
     <name>Blog Author</name>
   </author>
+  <entry>
+    <title>Suspect</title>
+    <link rel="alternate" href="http://blog.url.com/article/2010/07/10/suspect.html"/>
+    <id>http://blog.url.com/article/2010/07/10/suspect.html</id>
+    <published>2010-07-10T09:00:00+09:00</published>
+    <updated>2015-04-19T12:43:56+09:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;p&gt;Suspect, as the program for this assignment was called, taught me multi-process
+programming and signal-handling.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;Its basically an interpreter for a (very) small scripting language. The first
+line of each scripts opens a child process and each successive line is a
+command which allows interaction with the child process and the file system.&lt;/p&gt;
+
+&lt;p&gt;The most fun I had with it was when I used Suspect to open another instance of
+itself.&lt;/p&gt;
+
+&lt;p&gt;This was the third assigment I did for COMP2303/7306 while getting my Masters
+of Information Technology at the University of Queensland.&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>Single Player CLI Battleship</title>
     <link rel="alternate" href="http://blog.url.com/article/2010/07/09/single-player-cli-battleship.html"/>
@@ -112,30 +137,6 @@ into pure C#.&lt;/p&gt;
 
 &lt;p&gt;It is a direct port so uses WPF and follows the same structure of the original
 program.&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>Microcontroller Snake Game</title>
-    <link rel="alternate" href="http://blog.url.com/article/2009/11/10/microcontroller-snake-game.html"/>
-    <id>http://blog.url.com/article/2009/11/10/microcontroller-snake-game.html</id>
-    <published>2009-11-10T09:00:00+09:00</published>
-    <updated>2015-03-22T18:54:28+09:00</updated>
-    <author>
-      <name>Article Author</name>
-    </author>
-    <content type="html">&lt;p&gt;This assignment tested our ability to learn and understand aspects of Computer
-Systems Programming.&lt;/p&gt;
-
-&lt;p&gt;From the documentation:&lt;/p&gt;
-
-&lt;p&gt;"You are required to implement a version of the popular Snake game for the
-&lt;a href="http://www.atmel.com/devices/atmega8515.aspx"&gt;AVR 8515 board&lt;/a&gt;"&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;"The AVR is connected to a 15×7 LED display for displaying game field. The AVR
-is also connected to a PC over the UART and receives input (keypresses) from
-the terminal (HyperTerminal)."&lt;/p&gt;
 </content>
   </entry>
 </feed>

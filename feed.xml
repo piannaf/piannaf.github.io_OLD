@@ -5,10 +5,33 @@
   <id>http://blog.url.com/</id>
   <link href="http://blog.url.com/"/>
   <link href="http://blog.url.com/feed.xml" rel="self"/>
-  <updated>2010-07-10T09:00:00+09:00</updated>
+  <updated>2010-07-11T09:00:00+09:00</updated>
   <author>
     <name>Blog Author</name>
   </author>
+  <entry>
+    <title>Multi Player CLI Battleship</title>
+    <link rel="alternate" href="http://blog.url.com/article/2010/07/11/multi-player-cli-battleship.html"/>
+    <id>http://blog.url.com/article/2010/07/11/multi-player-cli-battleship.html</id>
+    <published>2010-07-11T09:00:00+09:00</published>
+    <updated>2015-04-25T10:19:50+09:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;p&gt;The multi-player version of the
+&lt;a href="/article/2010/07/09/single-player-cli-battleship.html"&gt;previous article&lt;/a&gt;. We were
+not allowed to use multiple processes for either the client or the server so
+there was a lot to learn about threading.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;I had a lot of fun (and frustration) debugging this program. It wasn’t actually
+as hard as it initially seemed.&lt;/p&gt;
+
+&lt;p&gt;This was the fourth (and final) assigment I did for COMP2303/7306 while getting
+my Masters of Information Technology at the University of Queensland.&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>Suspect</title>
     <link rel="alternate" href="http://blog.url.com/article/2010/07/10/suspect.html"/>
@@ -118,25 +141,6 @@ and uploaded my workbook for your perusal.&lt;/p&gt;
   &lt;li&gt;AVR I/O – Timer/Counter &amp;amp; Tone Generator — &lt;a href="https://github.com/piannaf/CSSE1000-Pracs/blob/master/8/Publication/Prac%208%20-%20AVR%20I_O%20-%20Timer_Counter%20%26%20Tone%20Generator.pdf"&gt;Description&lt;/a&gt;, &lt;a href="https://github.com/piannaf/CSSE1000-Pracs/blob/master/8/Publication/prac008.pdf"&gt;Workbook&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;AVR Interrupts &amp;amp; Serial I/O — &lt;a href="https://github.com/piannaf/CSSE1000-Pracs/blob/master/9/Publication/Prac%209%20-%20AVR%20Interrupts%20%26%20Serial%20I_O.pdf"&gt;Description&lt;/a&gt;, &lt;a href="https://github.com/piannaf/CSSE1000-Pracs/blob/master/9/Publication/prac009.pdf"&gt;Workbook&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
-</content>
-  </entry>
-  <entry>
-    <title>WPF Alarm Clock</title>
-    <link rel="alternate" href="http://blog.url.com/article/2009/12/07/wpf-alarm-clock.html"/>
-    <id>http://blog.url.com/article/2009/12/07/wpf-alarm-clock.html</id>
-    <published>2009-12-07T09:00:00+09:00</published>
-    <updated>2015-03-22T22:04:26+09:00</updated>
-    <author>
-      <name>Article Author</name>
-    </author>
-    <content type="html">&lt;p&gt;To get a better understanding of the .NET framework and C#, I refactored out
-all the XAML from &lt;a href="https://msdn.microsoft.com/en-us/library/ms756487.aspx"&gt;MSDN's Alarm Clock sample&lt;/a&gt;
-into pure C#.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;It is a direct port so uses WPF and follows the same structure of the original
-program.&lt;/p&gt;
 </content>
   </entry>
 </feed>

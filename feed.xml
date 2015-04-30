@@ -5,10 +5,37 @@
   <id>http://blog.url.com/</id>
   <link href="http://blog.url.com/"/>
   <link href="http://blog.url.com/feed.xml" rel="self"/>
-  <updated>2010-11-18T09:00:00+09:00</updated>
+  <updated>2010-11-19T09:00:00+09:00</updated>
   <author>
     <name>Blog Author</name>
   </author>
+  <entry>
+    <title>Finding the Median k-mer</title>
+    <link rel="alternate" href="http://blog.url.com/article/2010/11/19/finding-the-median-k-mer.html"/>
+    <id>http://blog.url.com/article/2010/11/19/finding-the-median-k-mer.html</id>
+    <published>2010-11-19T09:00:00+09:00</published>
+    <updated>2015-04-30T11:29:42+09:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;p&gt;For this algorithms assignment, we had to incrementally optimize an algorithm
+for finding the median k-mer of a DNA sequence.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;Pseudo-code was given for a naive implementation so I first implemented that.
+Then, I added the branch-and-bound mechanism which significantly sped things
+up. Then, I implemented the trie to store k-mers which allowed me to optimize
+the algorithm to search promising k-mers first which sped things up slightly
+more.&lt;/p&gt;
+
+&lt;p&gt;I was worried before submitting because my computer at home was slow and didn’t
+pass tests as quickly as others but when I did it in the lab, it was 3x faster
+(in a class on algorithms where we talk about big-O, it annoyed me that they
+gave an absolute time for what we should shoot for). My score ended up being
+19/20 so I must of done it mostly right.&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>Array- and Link-based Data Structures</title>
     <link rel="alternate" href="http://blog.url.com/article/2010/11/18/array-and-link-based-data-structures.html"/>
@@ -127,25 +154,6 @@ command which allows interaction with the child process and the file system.&lt;
 itself.&lt;/p&gt;
 
 &lt;p&gt;This was the third assigment I did for COMP2303/7306 while getting my Masters
-of Information Technology at the University of Queensland.&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>Single Player CLI Battleship</title>
-    <link rel="alternate" href="http://blog.url.com/article/2010/07/09/single-player-cli-battleship.html"/>
-    <id>http://blog.url.com/article/2010/07/09/single-player-cli-battleship.html</id>
-    <published>2010-07-09T09:00:00+09:00</published>
-    <updated>2015-04-19T12:39:53+09:00</updated>
-    <author>
-      <name>Article Author</name>
-    </author>
-    <content type="html">&lt;p&gt;By creating a single-player implementation of the well-known game ‘battle ship’,
-I learned about writing and compiling a C program which interacted with the
-user and file-system.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;This was the first assigment I did for COMP2303/7306 while getting my Masters
 of Information Technology at the University of Queensland.&lt;/p&gt;
 </content>
   </entry>

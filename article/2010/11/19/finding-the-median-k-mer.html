@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    
+    <!-- Always force latest IE rendering engine or request Chrome Frame -->
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    
+    <!-- Use title if it's in the page YAML frontmatter -->
+    <title>
+      Justin Mancinelli -
+      Finding the Median k-mer
+    </title>
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+    <link href="/stylesheets/all.css" rel="stylesheet" type="text/css" /><link href="/stylesheets/global-header.css" rel="stylesheet" type="text/css" /><link href="/stylesheets/article.css" rel="stylesheet" type="text/css" />
+    <script src="/javascripts/all.js" type="text/javascript"></script>
+  </head>
+  
+  <body class="article article_2010 article_2010_11 article_2010_11_19 article_2010_11_19_finding-the-median-k-mer">
+    <div>
+      <header id="header">
+        <h1>Justin Mancinelli</h1>
+        <h2>Agile developer, coach, and leader</h2>
+      </header>
+    </div>
+    <article>
+      <header style="background-image:url(/images/2010-11-19.png)">
+        <div>
+          <h1>Finding the Median k-mer</h1>
+          <h2>Nov 19, 2010</h2>
+        </div>
+      </header>
+      <section>
+        <div>
+          <p>For this algorithms assignment, we had to incrementally optimize an algorithm
+for finding the median k-mer of a DNA sequence.</p>
+
+<p></p>
+
+<p>Pseudo-code was given for a naive implementation so I first implemented that.
+Then, I added the branch-and-bound mechanism which significantly sped things
+up. Then, I implemented the trie to store k-mers which allowed me to optimize
+the algorithm to search promising k-mers first which sped things up slightly
+more.</p>
+
+<p>I was worried before submitting because my computer at home was slow and didn’t
+pass tests as quickly as others but when I did it in the lab, it was 3x faster
+(in a class on algorithms where we talk about big-O, it annoyed me that they
+gave an absolute time for what we should shoot for). My score ended up being
+19/20 so I must of done it mostly right.</p>
+
+        </div>
+      </section>
+    </article>
+  </body>
+</html>

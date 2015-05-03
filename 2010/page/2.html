@@ -17,50 +17,32 @@
   </head>
   
   <body class="index">
-    <div id="headerBuffer"></div>
-    <div id="header">
+    <div id="header" class="collapsed">
       <header>
         <div class="float-left">
           <h1>Justin Mancinelli</h1>
           <h2>Agile developer, coach, and leader</h2>
         </div>
         <div class="float-right">
-          <h3>Page 1 of 1</h3>
+          <h3>Page 2 of 2</h3>
         </div>
         <div class="clear-both">
       </header>
     </div>
 
     <h1>Archive for
-    Nov 2010
+    2010
 </h1>
 
+  <p>Page 2 of 2</p>
+
+    <p><a href="/2010.html">Previous page</a></p>
 
 <ul>
-    <li><a href="/article/2010/11/25/mine-environmental-management-system.html">Mine Environmental Management System</a> <span>Nov 25</span></li>
-    <li><a href="/article/2010/11/19/finding-the-median-k-mer.html">Finding the Median k-mer</a> <span>Nov 19</span></li>
-    <li><a href="/article/2010/11/18/array-and-link-based-data-structures.html">Array- and Link-based Data Structures</a> <span>Nov 18</span></li>
+    <li><a href="/article/2010/01/13/computer-systems-workbooks.html">Computer Systems Workbooks</a> <span>Jan 13</span></li>
 </ul>
 
 
 
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script>
-      $(window).scroll(function() {
-        var windowHeight = $(this).height();
-        var collapsedClass = "collapsed";
-        var header = $('#header');
-        var headerBuffer = $('#headerBuffer');
-        var toggleHeight = windowHeight * 0.50;
-
-        if ($(this).scrollTop() > toggleHeight){
-          header.addClass(collapsedClass);
-          headerBuffer.addClass(collapsedClass);
-        } else {
-          header.removeClass(collapsedClass);
-          headerBuffer.removeClass(collapsedClass);
-        }
-      });
-    </script>
   </body>
 </html>

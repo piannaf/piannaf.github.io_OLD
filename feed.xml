@@ -5,16 +5,38 @@
   <id>http://blog.url.com/</id>
   <link href="http://blog.url.com/"/>
   <link href="http://blog.url.com/feed.xml" rel="self"/>
-  <updated>2010-11-26T09:00:00+09:00</updated>
+  <updated>2010-11-27T09:00:00+09:00</updated>
   <author>
     <name>Blog Author</name>
   </author>
+  <entry>
+    <title>Lottery Scheduling</title>
+    <link rel="alternate" href="http://blog.url.com/article/2010/11/27/lottery-scheduling.html"/>
+    <id>http://blog.url.com/article/2010/11/27/lottery-scheduling.html</id>
+    <published>2010-11-27T09:00:00+09:00</published>
+    <updated>2015-05-04T12:18:40+09:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;p&gt;To learn about thread scheduling we had to modify the &lt;a href="http://linux.die.net/man/3/pth"&gt;Pth&lt;/a&gt;
+scheduler to implement fairness across all threads in a single process using a
+lottery mechanism.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;The policy to ensure fairness is “fair share with priorities” as described in
+the design specification.&lt;/p&gt;
+
+&lt;p&gt;If I were to do this again, I would not use malloc and friends — they are way
+to slow for hundreds of tickets.&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>Basic Unix Commands from Scratch</title>
     <link rel="alternate" href="http://blog.url.com/article/2010/11/26/basic-unix-commands-from-scratch.html"/>
     <id>http://blog.url.com/article/2010/11/26/basic-unix-commands-from-scratch.html</id>
     <published>2010-11-26T09:00:00+09:00</published>
-    <updated>2015-05-03T21:32:39+09:00</updated>
+    <updated>2015-05-04T11:58:51+09:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -130,26 +152,6 @@ database connectivity, authentication and automation.&lt;/p&gt;
   &lt;li&gt;Web Application Data Exchange — &lt;a href="https://jmancine.files.wordpress.com/2010/07/infs3202_2010_prac_9.pdf"&gt;pdf&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;Full Web Application — &lt;a href="https://jmancine.files.wordpress.com/2010/07/infs3202_2010_prac_10.pdf"&gt;pdf&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
-</content>
-  </entry>
-  <entry>
-    <title>Naive Spell Checker</title>
-    <link rel="alternate" href="http://blog.url.com/article/2010/07/12/naive-spell-checker.html"/>
-    <id>http://blog.url.com/article/2010/07/12/naive-spell-checker.html</id>
-    <published>2010-07-12T09:00:00+09:00</published>
-    <updated>2015-04-25T10:41:21+09:00</updated>
-    <author>
-      <name>Article Author</name>
-    </author>
-    <content type="html">&lt;p&gt;This naive spell checker was a three part project over the course of the
-semester. This was very easy because I had taught myself C# the summer before.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;Simply give it a dictionary and a document and it will tell you where you went
-wrong in the document. It will also offer suggested words based on insertion,
-deletion, substitution, and transposition errors (but not a combination of
-errors).&lt;/p&gt;
 </content>
   </entry>
 </feed>

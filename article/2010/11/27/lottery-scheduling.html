@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    
+    <!-- Always force latest IE rendering engine or request Chrome Frame -->
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    
+    <!-- Use title if it's in the page YAML frontmatter -->
+    <title>
+      Justin Mancinelli -
+      Lottery Scheduling
+    </title>
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+    <link href="/stylesheets/all.css" rel="stylesheet" type="text/css" /><link href="/stylesheets/global-header.css" rel="stylesheet" type="text/css" /><link href="/stylesheets/article.css" rel="stylesheet" type="text/css" />
+    <script src="/javascripts/all.js" type="text/javascript"></script>
+  </head>
+  
+  <body class="article article_2010 article_2010_11 article_2010_11_27 article_2010_11_27_lottery-scheduling">
+    <div>
+      <header id="header">
+        <h1>Justin Mancinelli</h1>
+        <h2>Agile developer, coach, and leader</h2>
+      </header>
+    </div>
+    <article>
+      <header style="background-image:url(/images/2010-11-27.png)">
+        <div>
+          <h1>Lottery Scheduling</h1>
+          <h2>Nov 27, 2010</h2>
+        </div>
+      </header>
+      <section>
+        <div>
+          <p>To learn about thread scheduling we had to modify the <a href="http://linux.die.net/man/3/pth">Pth</a>
+scheduler to implement fairness across all threads in a single process using a
+lottery mechanism.</p>
+
+<p></p>
+
+<p>The policy to ensure fairness is “fair share with priorities” as described in
+the design specification.</p>
+
+<p>If I were to do this again, I would not use malloc and friends — they are way
+to slow for hundreds of tickets.</p>
+
+        </div>
+      </section>
+    </article>
+  </body>
+</html>

@@ -29,6 +29,7 @@ body.index > div#header.collapsed {
 }
 
 body.article > div > header h1,
+body.article > div > header h1 a,
 body.article > div > header h2,
 body.index > div#header.collapsed h1,
 body.index > div#header.collapsed h1 a,

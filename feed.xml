@@ -5,10 +5,31 @@
   <id>http://blog.url.com/</id>
   <link href="http://blog.url.com/"/>
   <link href="http://blog.url.com/feed.xml" rel="self"/>
-  <updated>2010-12-02T09:00:00+09:00</updated>
+  <updated>2011-02-09T09:00:00+09:00</updated>
   <author>
     <name>Blog Author</name>
   </author>
+  <entry>
+    <title>Explode Tabs</title>
+    <link rel="alternate" href="http://blog.url.com/article/2011/02/09/explode-tabs.html"/>
+    <id>http://blog.url.com/article/2011/02/09/explode-tabs.html</id>
+    <published>2011-02-09T09:00:00+09:00</published>
+    <updated>2015-05-06T14:05:40+09:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;p&gt;My first Chrome extension isn't very useful as an extension but it was useful
+for learning.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;I took the (very useful) &lt;a href="https://chrome.google.com/extensions/detail/adjadgadeebehakpgamlnafmdkegkmph"&gt;Merge Windows&lt;/a&gt;
+extension and did the opposite, hence, Explode Tabs.&lt;/p&gt;
+
+&lt;p&gt;You can view the source by &lt;a href="https://chrome.google.com/extensions/detail/gcinfingfgnnjglljnedbhlpobmgagpp"&gt;installing it&lt;/a&gt;
+then opening up the file.&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>Database Usage Analytics</title>
     <link rel="alternate" href="http://blog.url.com/article/2010/12/02/database-usage-analytics.html"/>
@@ -113,30 +134,6 @@ using direct system calls instead of the C-library.&lt;/p&gt;
 
 &lt;p&gt;The ‘ls’ command needed to print its result in a specific way and the ‘cp’
 command wasn’t supposed to deal with multiple files or directories.&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>Mine Environmental Management System</title>
-    <link rel="alternate" href="http://blog.url.com/article/2010/11/25/mine-environmental-management-system.html"/>
-    <id>http://blog.url.com/article/2010/11/25/mine-environmental-management-system.html</id>
-    <published>2010-11-25T09:00:00+09:00</published>
-    <updated>2015-05-03T11:28:15+09:00</updated>
-    <author>
-      <name>Article Author</name>
-    </author>
-    <content type="html">&lt;p&gt;The final project for a course on software projects. I worked in a team of six.
-We needed to go through the full SDLC from project charter to deployment with
-user manual.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;My team came from various backgrounds and three of us were the core programmers
-(I was one of them). I was the one who chose to use the &lt;a href="http://appfuse.org/display/APF/Home"&gt;AppFuse framework&lt;/a&gt;
-so I had to learn to use it and help the others get acquainted.&lt;/p&gt;
-
-&lt;p&gt;We wrote most of the documentation together but I worked alone on the
-&lt;a href="https://github.com/piannaf/tigers/blob/master/docs/2010-10-11_Final%20Project%20Folder/System%20Manual.docx"&gt;System&lt;/a&gt; and
-&lt;a href="https://github.com/piannaf/tigers/blob/master/docs/2010-10-11_Final%20Project%20Folder/User%20Manual.docx"&gt;User&lt;/a&gt; manuals so I’ve linked to them directly here.&lt;/p&gt;
 </content>
   </entry>
 </feed>

@@ -31,11 +31,17 @@ body.index > div#header.collapsed {
 body.article > div > header h1,
 body.article > div > header h2,
 body.index > div#header.collapsed h1,
+body.index > div#header.collapsed h1 a,
 body.index > div#header.collapsed h2,
 body.index > div#header.collapsed h3 {
   color: rgba(255, 255, 255, .75);
   text-shadow: 0 1px 0 rgba(0, 0, 0, .5);
   padding: 0 0.5em;
+}
+
+body.article > div > header h1 a,
+body.index > div#header.collapsed h1 a {
+  text-decoration: none;
 }
 
 body.article > div > header h1,

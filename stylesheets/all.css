@@ -6,6 +6,7 @@ body {
 }
 
 body h1,
+body h1 a,
 body h2 {
   color: rgba(0, 0, 0, .75);
   font-weight: bold;

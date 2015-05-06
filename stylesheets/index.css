@@ -41,6 +41,10 @@ body.article > div > header h1 {
   text-transform: uppercase;
 }
 
+body.index > div#header h1 a {
+  text-decoration: none;
+}
+
 body.index > div#header h2,
 body.article > div > header h2 {
   font-size: 1.5em;

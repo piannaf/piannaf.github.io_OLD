@@ -65,7 +65,6 @@ body.index > div > article > div > a {
   width: 25%;
   max-width: 360px;
   padding: 0.75em;
-  text-decoration: none;
   text-transform: uppercase;
   margin: 0 auto;
 }

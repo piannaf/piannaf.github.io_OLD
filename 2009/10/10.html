@@ -18,9 +18,10 @@
   
   <body class="index">
     <div id="headerBuffer"></div>
-    <div id="header">
+    <div id="header" class="expanded">
       <header>
         <div class="float-left">
+          <a href="about.html">About Me</a>
           <h1><a href="/">Justin Mancinelli</a></h1>
 <h2>Agile developer, coach, and leader</h2>
 
@@ -48,15 +49,18 @@
       $(window).scroll(function() {
         var windowHeight = $(this).height();
         var collapsedClass = "collapsed";
+        var expandedClass = "expanded";
         var header = $('#header');
         var headerBuffer = $('#headerBuffer');
         var toggleHeight = windowHeight * 0.50;
 
         if ($(this).scrollTop() > toggleHeight){
+          header.removeClass(expandedClass);
           header.addClass(collapsedClass);
           headerBuffer.addClass(collapsedClass);
         } else {
           header.removeClass(collapsedClass);
+          header.addClass(expandedClass);
           headerBuffer.removeClass(collapsedClass);
         }
       });

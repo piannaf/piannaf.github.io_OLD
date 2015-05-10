@@ -35,6 +35,21 @@ body.index > div > article {
   text-align: center;
 }
 
+body.index > div.collapsed > header > div > a {
+  display: none;
+}
+
+body.index > div.expanded > header > div > a,
+body.index > div > article > div > a {
+  display: block;
+  border: 1px solid black;
+  width: 12em;
+  max-width: 360px;
+  padding: 0.75em;
+  text-transform: uppercase;
+  margin: 0 auto;
+}
+
 /***********/
 /* article */
 /***********/
@@ -57,14 +72,4 @@ body.index > div > article section {
   margin: 3em auto 2em;
   text-align: left;
   line-height: 1.5em;
-}
-
-body.index > div > article > div > a {
-  display: block;
-  border: 1px solid black;
-  width: 25%;
-  max-width: 360px;
-  padding: 0.75em;
-  text-transform: uppercase;
-  margin: 0 auto;
 }

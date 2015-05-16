@@ -18,54 +18,70 @@
   </head>
   
   <body class="index">
-    <div id="headerBuffer"></div>
-    <div id="header" class="expanded">
+    <div id="header" class="collapsed">
       <header>
         <div class="float-left">
-          <a href="/about.html">About Me</a>
+          <a href="about.html">About Me</a>
           <h1><a href="/">Justin Mancinelli</a></h1>
 <h2>Agile developer, coach, and leader</h2>
 
         </div>
         <div class="float-right">
-          <h3>Page 1 of 1</h3>
+          <h3>Page 6 of 6</h3>
         </div>
         <div class="clear-both">
       </header>
     </div>
 
-    <h1>Archive for
-    2011
-</h1>
+      <div class="article">
+    <article class="parallax-window"
+      data-parallax="scroll"
+      data-speed="0.5"
+      data-image-src=/images/2008-06-12.png>
+      <div>
+        <header>
+          <h1>kuiq - a micro-vlog</h1>
+          <h2>Jun 12, 2008</h2>
+        </header>
+
+        <section><p>I was inspired by the popularity of <a href="http://twitter.com">Twitter</a> and
+<a href="http://youtube.com">Youtube</a> to create a micro-vlogging platform where videos
+would be limited to 30seconds.</p>
+
+<p></section>
+        <a href="/article/2008/06/12/kuiq-micro-vlog.html">Read More</a>
+      </div>
+    </article>
+  </div>
+  <div class="article">
+    <article class="parallax-window"
+      data-parallax="scroll"
+      data-speed="0.5"
+      data-image-src=/images/2006-08-26.png>
+      <div>
+        <header>
+          <h1>PARTICLE Redesign</h1>
+          <h2>Aug 26, 2006</h2>
+        </header>
+
+        <section><p>Someone discovered I had a way with HTML and recommended me to Professor
+McFarland who wanted his <a href="http://www.pas.rochester.edu/~pavone/particle-www/index.html">summer program site</a>
+redesigned. When I found it, it was a frame maze full of broken and recursive
+links. </p>
+
+<p></section>
+        <a href="/article/2006/08/26/PARTICLE-redesign.html">Read More</a>
+      </div>
+    </article>
+  </div>
+
+<footer>
+  <p>
+    <a href="/page/5/">Previous page</a>
+  </p>
+</footer>
 
 
-<ul>
-    <li><a href="/article/2011/02/09/explode-tabs.html">Explode Tabs</a> <span>Feb  9</span></li>
-</ul>
-
-
-
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script>
-      $(window).scroll(function() {
-        var windowHeight = $(this).height();
-        var collapsedClass = "collapsed";
-        var expandedClass = "expanded";
-        var header = $('#header');
-        var headerBuffer = $('#headerBuffer');
-        var toggleHeight = windowHeight * 0.50;
-
-        if ($(this).scrollTop() > toggleHeight){
-          header.removeClass(expandedClass);
-          header.addClass(collapsedClass);
-          headerBuffer.addClass(collapsedClass);
-        } else {
-          header.removeClass(collapsedClass);
-          header.addClass(expandedClass);
-          headerBuffer.removeClass(collapsedClass);
-        }
-      });
-    </script>
     <script type="text/javascript">
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

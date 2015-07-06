@@ -5,7 +5,7 @@
   <id>http://blog.url.com/</id>
   <link href="http://blog.url.com/"/>
   <link href="http://blog.url.com/feed.xml" rel="self"/>
-  <updated>2011-02-09T09:00:00+09:00</updated>
+  <updated>2011-02-09T00:00:00+00:00</updated>
   <author>
     <name>Blog Author</name>
   </author>
@@ -13,8 +13,8 @@
     <title>Explode Tabs</title>
     <link rel="alternate" href="http://blog.url.com/article/2011/02/09/explode-tabs.html"/>
     <id>http://blog.url.com/article/2011/02/09/explode-tabs.html</id>
-    <published>2011-02-09T09:00:00+09:00</published>
-    <updated>2015-05-06T14:05:40+09:00</updated>
+    <published>2011-02-09T00:00:00+00:00</published>
+    <updated>2015-07-06T07:03:07+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -34,8 +34,8 @@ then opening up the file.&lt;/p&gt;
     <title>Database Usage Analytics</title>
     <link rel="alternate" href="http://blog.url.com/article/2010/12/02/database-usage-analytics.html"/>
     <id>http://blog.url.com/article/2010/12/02/database-usage-analytics.html</id>
-    <published>2010-12-02T09:00:00+09:00</published>
-    <updated>2015-05-06T13:59:20+09:00</updated>
+    <published>2010-12-02T00:00:00+00:00</published>
+    <updated>2015-07-06T07:03:07+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -54,8 +54,8 @@ class where I designed and implemented a
     <title>Encrypted File System</title>
     <link rel="alternate" href="http://blog.url.com/article/2010/11/29/encrypted-file-system.html"/>
     <id>http://blog.url.com/article/2010/11/29/encrypted-file-system.html</id>
-    <published>2010-11-29T09:00:00+09:00</published>
-    <updated>2015-05-05T13:20:56+09:00</updated>
+    <published>2010-11-29T00:00:00+00:00</published>
+    <updated>2015-07-06T07:03:07+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -75,8 +75,8 @@ driver to understand this stuff and it was a lot of fun.&lt;/p&gt;
     <title>Encryption Device Driver</title>
     <link rel="alternate" href="http://blog.url.com/article/2010/11/28/encryption-device-driver.html"/>
     <id>http://blog.url.com/article/2010/11/28/encryption-device-driver.html</id>
-    <published>2010-11-28T09:00:00+09:00</published>
-    <updated>2015-05-05T13:12:13+09:00</updated>
+    <published>2010-11-28T00:00:00+00:00</published>
+    <updated>2015-07-06T07:03:07+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -99,8 +99,8 @@ macros.&lt;/p&gt;
     <title>Lottery Scheduling</title>
     <link rel="alternate" href="http://blog.url.com/article/2010/11/27/lottery-scheduling.html"/>
     <id>http://blog.url.com/article/2010/11/27/lottery-scheduling.html</id>
-    <published>2010-11-27T09:00:00+09:00</published>
-    <updated>2015-05-04T12:18:40+09:00</updated>
+    <published>2010-11-27T00:00:00+00:00</published>
+    <updated>2015-07-06T07:03:07+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -121,8 +121,8 @@ to slow for hundreds of tickets.&lt;/p&gt;
     <title>Basic Unix Commands from Scratch</title>
     <link rel="alternate" href="http://blog.url.com/article/2010/11/26/basic-unix-commands-from-scratch.html"/>
     <id>http://blog.url.com/article/2010/11/26/basic-unix-commands-from-scratch.html</id>
-    <published>2010-11-26T09:00:00+09:00</published>
-    <updated>2015-05-04T11:58:51+09:00</updated>
+    <published>2010-11-26T00:00:00+00:00</published>
+    <updated>2015-07-06T07:03:07+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>

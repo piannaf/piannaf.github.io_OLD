@@ -4,7 +4,7 @@ body.article > article {
   display: table;
   table-layout: fixed;
   text-align: center;
-  padding-top: 3em;
+  padding-top: 5.5vw;
 }
 
 body.article > article > header {

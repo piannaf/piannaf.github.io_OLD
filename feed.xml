@@ -5,10 +5,121 @@
   <id>http://blog.url.com/</id>
   <link href="http://blog.url.com/"/>
   <link href="http://blog.url.com/feed.xml" rel="self"/>
-  <updated>2011-02-09T00:00:00+00:00</updated>
+  <updated>2015-06-21T00:00:00+00:00</updated>
   <author>
     <name>Blog Author</name>
   </author>
+  <entry>
+    <title>Freeing Data from PDFs</title>
+    <link rel="alternate" href="http://blog.url.com/article/2015/06/21/freeing-data-from-pdfs.html"/>
+    <id>http://blog.url.com/article/2015/06/21/freeing-data-from-pdfs.html</id>
+    <published>2015-06-21T00:00:00+00:00</published>
+    <updated>2015-07-13T10:08:02+00:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;p&gt;I wanted to process some data for stabilised rents in NYC but the best I could find was in PDFs. Why do so many governments lock away their data in PDFs?&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;Here is the story behind my project &lt;a href="https://github.com/piannaf/rgb2csv"&gt;rgb2csv&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h1 id="the-rant"&gt;The Rant&lt;/h1&gt;
+
+&lt;p&gt;Don’t get me wrong, I’m happy the data is out on the internet (even if it is outdated, not accurate, and only partially relevant). It’s better than putting in a formal request and then waiting a month or worse: needing to physically go see a clerk and ask for some print-outs.&lt;/p&gt;
+
+&lt;p&gt;The problem with PDFs is they are almost as bad a print-outs. They are called PDFs for a reason. They are an outstanding format for creating portable documents. However, data should’t be written in document form any more. Data over the internet is portable when it is accessible from an API.&lt;/p&gt;
+
+&lt;h1 id="the-project"&gt;The Project&lt;/h1&gt;
+
+&lt;p&gt;In my search for New York City stabilised rent data, most signs pointed to the NYC Rent Guidelines Board who made &lt;a href="http://www.nycrgb.org/html/resources/zip.html"&gt;Rent Stabilised Buildings Listing data&lt;/a&gt;, from 2013, available for download as a PDF for each burrough of NYC.&lt;/p&gt;
+
+&lt;p&gt;My first plan was to&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Extract the data from PDF into CSV because CSVs are super easy to process&lt;/li&gt;
+  &lt;li&gt;Process the data into a form I cared about and move it into a database&lt;/li&gt;
+  &lt;li&gt;Write an API to access the data from the database&lt;/li&gt;
+  &lt;li&gt;Create a website that pulls data from the API, maps the building locations and provides more info&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;It was by coincidence that, not much earlier, &lt;a href="https://twitter.com/noruweijin"&gt;Havard Ferstad&lt;/a&gt; had pointed me to &lt;a href="https://github.com/hhtyo/great-east-japan-earthquake-evacuees"&gt;Great East Japan Earthquake Evacuees&lt;/a&gt;, a project extracting data from PDFs sourced from Japan's Reconstruction Agency. Now I had a starting point.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="https://github.com/tabulapdf/tabula-extractor"&gt;Tabula-extractor&lt;/a&gt; is written for JRuby because it makes use of &lt;a href="https://pdfbox.apache.org/"&gt;PDFBox&lt;/a&gt; which is written in Java. To keep things simple, I started off by interfacing with tabula-extractor via a Ruby script. I named my script &lt;a href="https://github.com/piannaf/rgb2csv"&gt;rgb2csv&lt;/a&gt; where “rgb” is a reference to the Rent Guidelines Board’s PDFs and “csv” is the output format of the script.&lt;/p&gt;
+
+&lt;p&gt;After completing step 1 of my plan for Manhattan only, I discovered other people’s projects which had already completed mine in a much better way. I’ll introduce them later.&lt;/p&gt;
+
+&lt;h1 id="the-implementation"&gt;The Implementation&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href="https://github.com/tabulapdf/tabula-extractor"&gt;Tabula-extractor&lt;/a&gt; is very easy to work with because it turns the chore of scraping a PDF into a very declarative experience.&lt;/p&gt;
+
+&lt;p&gt;The entry function calls on tabula-extractor to do all the grunt-work of paginating the PDF into useful objects. The only real logic I needed to write was to clean up the data and combine it into a single CSV.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;def extract_data_from(pdf_file)
+  extractor = Tabula::Extraction::ObjectExtractor.new(pdf_file, 1..2 )
+  tables = extractor.extract.map { |page|
+    table_area = select_table_area_from(page)
+    table = extract_table_from(table_area)
+    cleanup(table)                                                              
+  }
+  extractor.close!
+
+  combine(tables)
+end
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The automated table detector wasn’t able to work because the PDF was a mix of right, left, and center aligned columns and many columns had very sparse data. I had to manually inspect the column spacing which means this script is fragile. I have some ideas that would make this unnecessary but won’t be trying them out since I ended this project.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;def extract_table_from(table_area)
+  vertical_rulings = [50,103,198,245,280,370,400,450,542,630,703,727].map{ |n|
+    Tabula::Ruling.new(0, n, 0, 1000)
+  }
+
+  table_area.get_table(:vertical_rulings =&amp;gt; vertical_rulings)
+end
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Cleaning up was necessary because there were strange characters showing up instead of whitespace between words. On closer inspection, they were whitespace characters so I could just get rid of them by searching for whitespace. This is a quick fix though, so if I were continuing this project I’d want to test more.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;def cleanup(table)
+  table.rows.map {|row|
+    # extract text from text elements
+    # and remove some strange whitespace
+    row.map { |te| te.text.gsub(/\s+/, '').strip }
+  }
+end
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Finally, combining all the tables then outputting the CSV was a simple matter of keeping the header row unique to the entire table rather than on each page then joining all the lines together and ensuring the output ended with a new line.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;def combine(tables)
+  # All tables have the same header
+  # Ensure it stays a line of its own so we can concat to the rest
+  header = [tables[0][0]]
+
+  body = tables.map { |table| table[1..-1] }.flatten(1)
+
+  header.concat(body)
+end
+
+def csv_from(data)
+  data.map { |line| line.join(",") }.join("\n") + "\n”
+end
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h1 id="the-other-peoples-projects"&gt;The Other People’s Projects&lt;/h1&gt;
+
+&lt;p&gt;I have no more plans to update or maintain this program because I discovered the following projects:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href="https://github.com/clhenrick/dhcr-rent-stabilized-data"&gt;DHCR Rent Stabilized Data&lt;/a&gt; which got Excel spreadsheets straight from &lt;a href="http://www.nyshcr.org/"&gt;DHCR&lt;/a&gt; and made a &lt;a href="https://chenrick.cartodb.com/viz/20b7c6ac-ee12-11e4-b74e-0e853d047bba/public_map"&gt;beautiful map&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://github.com/talos/nyc-stabilization-unit-counts"&gt;NYC Stabilization Unit Counts&lt;/a&gt; which is a massive PDF scraping project of NYC Tax Bills.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;There is tremendous work done above. I'd like to mashup their data with others sometime.&lt;/p&gt;
+
+</content>
+  </entry>
   <entry>
     <title>Explode Tabs</title>
     <link rel="alternate" href="http://blog.url.com/article/2011/02/09/explode-tabs.html"/>
@@ -115,25 +226,6 @@ the design specification.&lt;/p&gt;
 
 &lt;p&gt;If I were to do this again, I would not use malloc and friends — they are way
 to slow for hundreds of tickets.&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>Basic Unix Commands from Scratch</title>
-    <link rel="alternate" href="http://blog.url.com/article/2010/11/26/basic-unix-commands-from-scratch.html"/>
-    <id>http://blog.url.com/article/2010/11/26/basic-unix-commands-from-scratch.html</id>
-    <published>2010-11-26T00:00:00+00:00</published>
-    <updated>2015-07-06T07:03:07+00:00</updated>
-    <author>
-      <name>Article Author</name>
-    </author>
-    <content type="html">&lt;p&gt;As a warm-up exercise for this class on Operating System Architecture, we had
-to implement ‘ls’, ‘cp’, and ‘rm -rf’ as built-in commands to a custom shell
-using direct system calls instead of the C-library.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;The ‘ls’ command needed to print its result in a specific way and the ‘cp’
-command wasn’t supposed to deal with multiple files or directories.&lt;/p&gt;
 </content>
   </entry>
 </feed>

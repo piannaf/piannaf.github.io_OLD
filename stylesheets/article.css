@@ -21,8 +21,9 @@ body.article > article > section {
 }
 
 body.article > article > section > div {
+  line-height: 1.5;
   text-align: left;
-  width: 50%;
+  width: 75%;
   max-width: 720px;
   margin: auto;
 }

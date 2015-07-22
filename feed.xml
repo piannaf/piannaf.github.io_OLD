@@ -121,6 +121,27 @@ end
 </content>
   </entry>
   <entry>
+    <title>Checksum != Security</title>
+    <link rel="alternate" href="http://blog.url.com/article/2015/03/17/checksum-security.html"/>
+    <id>http://blog.url.com/article/2015/03/17/checksum-security.html</id>
+    <published>2015-03-17T00:00:00+00:00</published>
+    <updated>2015-07-22T04:39:01+00:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;p&gt;One day I stumbled upon a web app testing environment that used client side Javascript to perform authentication. &lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;It was very simple to break into because it hashed the password using a very simple checksum algorithm. &lt;/p&gt;
+
+&lt;p&gt;I created &lt;a href="http://www.slideshare.net/JustinMancinelli/checksums-are-not-secure"&gt;this presentation&lt;/a&gt; to share my thoughts on what I found.&lt;/p&gt;
+
+&lt;script async="" class="speakerdeck-embed" data-id="2cc5342a058d4b6483ff0edf97193957" data-ratio="1.33333333333333" src="//speakerdeck.com/assets/embed.js"&gt;&lt;/script&gt;
+
+</content>
+  </entry>
+  <entry>
     <title>Explode Tabs</title>
     <link rel="alternate" href="http://blog.url.com/article/2011/02/09/explode-tabs.html"/>
     <id>http://blog.url.com/article/2011/02/09/explode-tabs.html</id>
@@ -204,28 +225,6 @@ there was a fair bit of research to do. &lt;/p&gt;
 &lt;p&gt;I decided to make full use of the Linux kernel &lt;a href="http://lxr.linux.no/linux+v2.6.36/include/linux/list.h"&gt;linked list&lt;/a&gt;
 and &lt;a href="http://lxr.linux.no/linux+v2.6.36/include/linux/circ_buf.h"&gt;circular buffer&lt;/a&gt;
 macros.&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>Lottery Scheduling</title>
-    <link rel="alternate" href="http://blog.url.com/article/2010/11/27/lottery-scheduling.html"/>
-    <id>http://blog.url.com/article/2010/11/27/lottery-scheduling.html</id>
-    <published>2010-11-27T00:00:00+00:00</published>
-    <updated>2015-07-06T07:03:07+00:00</updated>
-    <author>
-      <name>Article Author</name>
-    </author>
-    <content type="html">&lt;p&gt;To learn about thread scheduling we had to modify the &lt;a href="http://linux.die.net/man/3/pth"&gt;Pth&lt;/a&gt;
-scheduler to implement fairness across all threads in a single process using a
-lottery mechanism.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;The policy to ensure fairness is “fair share with priorities” as described in
-the design specification.&lt;/p&gt;
-
-&lt;p&gt;If I were to do this again, I would not use malloc and friends — they are way
-to slow for hundreds of tickets.&lt;/p&gt;
 </content>
   </entry>
 </feed>

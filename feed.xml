@@ -142,6 +142,29 @@ end
 </content>
   </entry>
   <entry>
+    <title>My tmux Experience</title>
+    <link rel="alternate" href="http://blog.url.com/article/2013/11/28/my-tmux-experience.html"/>
+    <id>http://blog.url.com/article/2013/11/28/my-tmux-experience.html</id>
+    <published>2013-11-28T00:00:00+00:00</published>
+    <updated>2015-07-30T06:21:07+00:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;p&gt;I have become a lot more productive since I started using &lt;a href="tmux.github.io"&gt;tmux&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;Before I knew about tmux, I had been using &lt;a href="http://www.unixmantra.com/2013/04/putty-connection-manager-tabbed-putty.html"&gt;PuttyCM&lt;/a&gt; but, as my frustration with it's suboptimal use of screen real estate and frequent crashing grew, I looked for other solutions.&lt;/p&gt;
+
+&lt;p&gt;It was by accident that I noticed a friend and colleague's screen one day when it looked liked the entire screen was filled with multiple terminals and only a thin line separating each one. It was beautiful, and it was tmux.&lt;/p&gt;
+
+&lt;p&gt;When I changed jobs, I heard a few colleagues talk about &lt;a href="http://www.gnu.org/software/screen/"&gt;screen&lt;/a&gt; but they used it for very limited purpose. I created &lt;a href="http://www.slideshare.net/JustinMancinelli/my-tmux-experience"&gt;this presentation&lt;/a&gt; to show them what tmux was and what I was doing with it.&lt;/p&gt;
+
+&lt;script async="" class="speakerdeck-embed" data-id="86a9e71e1cd346dd94934a4919b9076c" data-ratio="1.33333333333333" src="//speakerdeck.com/assets/embed.js"&gt;&lt;/script&gt;
+
+</content>
+  </entry>
+  <entry>
     <title>Explode Tabs</title>
     <link rel="alternate" href="http://blog.url.com/article/2011/02/09/explode-tabs.html"/>
     <id>http://blog.url.com/article/2011/02/09/explode-tabs.html</id>
@@ -201,30 +224,6 @@ content was basically: there exists a VFS and data is stored in blocks. I
 walked the &lt;a href="http://lxr.linux.no/linux+v2.6.36/fs/"&gt;Linux source tree&lt;/a&gt; down from
 the open and write system calls through the VFS layer to the block device
 driver to understand this stuff and it was a lot of fun.&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>Encryption Device Driver</title>
-    <link rel="alternate" href="http://blog.url.com/article/2010/11/28/encryption-device-driver.html"/>
-    <id>http://blog.url.com/article/2010/11/28/encryption-device-driver.html</id>
-    <published>2010-11-28T00:00:00+00:00</published>
-    <updated>2015-07-06T07:03:07+00:00</updated>
-    <author>
-      <name>Article Author</name>
-    </author>
-    <content type="html">&lt;p&gt;We had to implement a linux device driver interface to an encryption
-‘coprocessor’. The driver performs a XOR-based stream cipher since we didn’t
-have special encryption hardware.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;By far, the most interesting and most fun assignment I’ve ever had. The
-lectures consisted of just about zero information about how to go about this so
-there was a fair bit of research to do. &lt;/p&gt;
-
-&lt;p&gt;I decided to make full use of the Linux kernel &lt;a href="http://lxr.linux.no/linux+v2.6.36/include/linux/list.h"&gt;linked list&lt;/a&gt;
-and &lt;a href="http://lxr.linux.no/linux+v2.6.36/include/linux/circ_buf.h"&gt;circular buffer&lt;/a&gt;
-macros.&lt;/p&gt;
 </content>
   </entry>
 </feed>
